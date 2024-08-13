@@ -42,7 +42,7 @@ describe("Sender and Receiver", function () {
     const { sender, receiver, router } = await loadFixture(deployFixture);
 
     // Define parameters for the tests, including gas limit and iterations for messages.
-    const gasLimit = 400000;
+    const gasLimit = 26_509; // 10% increase
     const testParams = [0, 50, 99]; // Different iteration values for testing.
     const gasUsageReport = []; // To store reports of gas used for each test.
 
